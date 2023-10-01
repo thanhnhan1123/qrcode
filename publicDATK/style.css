@@ -1,0 +1,112 @@
+/* Reset some default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Apply some basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Style the main content */
+.content {
+  background-color: #fff;
+  padding: 0; /* Remove padding to make room for the image */
+  border-radius: 5px;
+  width: 100%;
+  flex-grow: 1;
+  overflow-y: auto;
+  position: relative; /* Add position relative to allow for z-index */
+}
+
+/* Style the full-screen image container */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the full-screen image */
+.full-screen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px);
+}
+
+/* Style the text on top of the image */
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Style the large text */
+.large-text {
+  font-size: 22px; /* Adjust the font size as desired */
+  margin-top: 20px; /* Add 10px margin from the top */
+}
+
+/* Style the highlighted text */
+.highlight-text {
+  color: #ffffff; /* Change the text color to your desired highlight color */
+}
+.topic-text {
+  font-size: 20px; /* Adjust the font size as desired */
+  margin-top: 10px; /* Add 10px margin from the top */
+  font-size: 22px;
+}
+/* Style the column text */
+.column-text {
+  text-align: left; /* Align the text to the left in the column */
+  margin-left: 30px;
+  margin-top: 50px; /* Add margin from the top */
+  font-size: 20px;
+}
+.symbol {
+  font-size: 28px; /* Adjust the font size of the symbol */
+  margin: 10px 5px; /* Add margin (top and bottom) and spacing between symbols */
+  display: inline-block;
+}
+.inline-image {
+  width: 250px; /* Set the desired width for the inline image */
+  height: 250px;
+  margin-top: 15px; /* Add 30px margin from the top */
+  margin-left: 10px; /* Add spacing between the text and the image */
+}
+/* Adjust the existing button styles for the "Turn Right" button */
+.button-container button.turn-right-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 280px; /* Add this line to push the button to the right */
+  margin-top: 20px;
+}
+
+.button-container button.turn-right-button:hover {
+  background-color: #2980b9;
+}

@@ -1,0 +1,106 @@
+/* Reset some default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Apply some basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Style the main content */
+.content {
+  background-color: #fff;
+  padding: 0; /* Remove padding to make room for the image */
+  border-radius: 5px;
+  width: 100%;
+  flex-grow: 1;
+  overflow-y: auto;
+  position: relative; /* Add position relative to allow for z-index */
+}
+
+/* Style the full-screen image container */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the full-screen image */
+.full-screen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px);
+}
+
+/* Style the text on top of the image */
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  z-index: 1;
+  font-size: 22px; /* Adjust the font size as desired */
+}
+.image-text-inline {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Style the "hello" text */
+.image-text-inline p {
+  margin-top: 30px;
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+/* Add this CSS to style the buttons at the bottom */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  z-index: 1; /* Ensure buttons are above other content */
+}
+
+.button-container button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #2980b9;
+}
+
+/* Style the icons */
+.button-container button i {
+  margin-right: 5px;
+}
